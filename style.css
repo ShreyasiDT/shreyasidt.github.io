@@ -1,0 +1,255 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+} /* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+ 
+  background-color: #000000;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  background-position: 50% 50%;
+
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+.img{
+  background-color: powderblue;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+  
+  
+}
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px powderblue, 0 0 40px powderblue, 0 0 50px powderblue, 0 0 60px powderblue, 0 0 70px powderblue;
+  }
+  
+  to {
+    text-shadow: 0 0 50px #fff, 0 0 30px powderblue, 0 0 40px powderblue, 0 0 50px powderblue, 0 0 60px powderblue, 0 0 70px powderblue, 0 0 80px powderblue;
+  }
+}
+.heading{
+  background-color: #FEFF86;
+  font-family: 'Quicksand', sans-serif;
+  color:black;
+}
+
+.fs-5{
+  font-family: 'Quicksand', sans-serif;
+  
+ 
+}
+
+
+
+
+.nav1{
+  position:relative;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  font-size: larger;
+}
+
+.nav1::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  transform:scaleX(0);
+  height:5px;
+  bottom:0;
+  left:0;
+  
+  background-color: #F7C8E0;
+  transform-origin: bottom right;
+  transition:transform 0.25s ease-out;
+  z-index: 2;
+}
+
+.nav1:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+  z-index: 2;
+}
+
+.nav2{
+  position:relative;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  font-size: larger;
+}
+
+.nav2::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  transform:scaleX(0);
+  height:5px;
+  bottom:0;
+  left:0;
+  background-color: #F7C8E0;
+  transform-origin: bottom right;
+  transition:transform 0.25s ease-out;
+  z-index: 2;
+}
+
+.nav2:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+  z-index: 2;
+}
+
+.nav3{
+  position:relative;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  font-size: larger;
+}
+
+.nav3::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  transform:scaleX(0);
+  height:5px;
+  bottom:0;
+  left:0;
+  background-color: #F7C8E0;
+  transform-origin: bottom right;
+  transition:transform 0.25s ease-out;
+  z-index: 2;
+}
+
+.nav3:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+  z-index: 2;
+}
+
+.nav4{
+  position:relative;
+  color: white;
+  text-decoration: none;
+  z-index: 2;
+  font-size: larger;
+  
+}
+
+.nav4::after{
+  content:'';
+  position:absolute;
+  width:100%;
+  transform:scaleX(0);
+  height:5px;
+  bottom:0;
+  left:0;
+  background-color: #F7C8E0;
+  transform-origin: bottom right;
+  transition:transform 0.25s ease-out;
+  z-index: 2;
+}
+
+.nav4:hover::after{
+  transform:scaleX(1);
+  transform-origin:bottom left;
+  z-index: 2;
+}
+
+
+.text-black-80{
+  font-family: 'Quicksand', sans-serif;
+  font-size: medium;
+}
+
+.list{
+  font-family: 'Quicksand', sans-serif;
+  font-size:large;
+}
+
+.edu{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F7C8E0;
+  color:black;
+}
+
+.hob{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F7C8E0;
+  color:black;
+}
+
+.con{
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 50px;
+
+}
+.con a{
+  text-decoration: none;
+  box-shadow:0 0 20px 10px rgba(0,0,0,0.05);
+  margin:0 30px;
+   
+}
+
+.con a::after{
+  content:'';
+  width:100%;
+  height:100%;
+  top:-90px;
+  left:0;
+  background:linear-gradient(-45deg,#9BABB8,#E893CF);
+}
+
+
+
+
+ 
+
+
